@@ -28,6 +28,7 @@
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
+		"@beyonk/svelte-notifications": "^4.2.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"@sveltejs/package": "^2.0.0",
