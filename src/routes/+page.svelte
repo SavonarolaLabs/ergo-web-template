@@ -1,19 +1,12 @@
 <script lang="ts">
-	import { NotificationDisplay, notifier } from '@beyonk/svelte-notifications';
+	import NotificationsExample from "$lib/NotificationsExample.svelte";
 
-	function notify() {
-		notifier.success('Notifications work!');
-	}
 </script>
 
-<NotificationDisplay />
 <div class="grow p-4 main-page" style="padding-top:77px;">
 	<h1 class="text-5xl font-bold mb-10 mt-5">Welcome to CrystalSwap!</h1>
 
-	<button
-		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
-		on:click={notify}>Test notification</button
-	>
+	<NotificationsExample></NotificationsExample>
 </div>
 
 <style lang="postcss">
