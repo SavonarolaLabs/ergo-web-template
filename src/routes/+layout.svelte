@@ -1,9 +1,17 @@
 <script>
+	import '../app.css';
+	import { onMount } from 'svelte';
+	import { selected_wallet_ergo } from '../store/store';
 	import Navbar from '$lib/Navbar.svelte';
 
-	import '../app.css';
+	onMount(() => {
+		const walletName = localStorage.getItem('connected_ergo_wallet');
+		if (walletName) {
+			selected_wallet_ergo.set(walletName);
+		}
+	});
 </script>
 
-<Navbar></Navbar>
-<div style="padding-top:77px;"></div>
+<Navbar />
+<div style="padding-top:77px;" />
 <slot />

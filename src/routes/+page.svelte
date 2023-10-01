@@ -7,13 +7,17 @@
 </script>
 
 <NotificationDisplay />
-<div></div>
-<h1 class="text-3xl font-bold" >Hello world!</h1>
+<div class="p-4">
+<h1 class="text-3xl font-bold mb-10" >Your next Ergo dApp!</h1>
 
-<button on:click={notify}>Show notification</button>
-
+<button 
+class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+on:click={notify}>Show notification</button>
+</div>
 <style lang="postcss">
 	:global(html) {
-		background-color: theme(colors.gray.300);
+		background-color: #8BC6EC;
+		background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+		height: 100vh;
 	}
 </style>
