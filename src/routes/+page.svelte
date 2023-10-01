@@ -26,6 +26,7 @@
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
+		color: #251e43;
 	}
 	.main-page{
 		background-image: url("https://bitmasks.io/landing/sushimobile.png");

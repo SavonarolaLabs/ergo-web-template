@@ -7,7 +7,7 @@
 	style="height:77px;"
 >
 	<a href="/">
-		<div class="font-bold text-2xl">AnySwap</div>
+		<div class="text-white font-bold text-2xl">AnySwap</div>
 	</a>
 	<div>
 		<WalletButton />
