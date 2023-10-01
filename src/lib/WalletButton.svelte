@@ -2,7 +2,7 @@
 	import { notifier } from '@beyonk/svelte-notifications';
 	import { selected_wallet_ergo } from '../store/store.js';
 	import Modal from './core/Modal.svelte';
-	let showModal = true;
+	let showModal = false;
 
 	async function connectNautilusWallet() {
 		showModal = false;
@@ -99,7 +99,7 @@
 					<button
 						on:click={connectNautilusWallet}
 						class:grayscale={!window.ergoConnector['nautilus']}
-						class="p-2 w-full flex justify-center items-center bg-white border-orange-900 text-black bg-green-100 rounded-md"
+						class="p-2 w-full flex justify-center items-center bg-white border-orange-900 text-black bg-green-100 rounded-md bg-opacity-30 hover:bg-opacity-80"
 					>
 						<div>
 							{#if $selected_wallet_ergo == 'nautilus'}
