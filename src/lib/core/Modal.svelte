@@ -13,12 +13,14 @@
 	on:click|self={() => dialog.close()}
 >
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
-	<div on:click|stopPropagation>
+	<div 
+		class="backdrop-blur bg-opacity-10 shadow-sm"
+		on:click|stopPropagation>
 		<slot />
 		<!-- svelte-ignore a11y-autofocus -->
 		<div class="flex justify-end">
 			<button 
-				class="w-full hover:bg-blue-700 hover:text-white py-2 px-4 border border-blue-700 rounded"
+				class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
 				autofocus on:click={() => dialog.close()}>close</button>
 		</div>
 	</div>
@@ -30,6 +32,8 @@
 		border-radius: 0.2em;
 		border: none;
 		padding: 0;
+		backdrop-filter: blur(8px);
+		background: rgba(255,255,255,0.2);
 	}
 	dialog::backdrop {
 		background: rgba(0, 0, 0, 0.3);
