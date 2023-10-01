@@ -56,6 +56,11 @@ export async function disconnectErgoWallet() {
 export async function reconnectErgoWallet() {
     const walletName = localStorage.getItem('connected_ergo_wallet');
     if (walletName) {
-        selected_wallet_ergo.set(walletName);
+        try{
+            await ergoConnector[walletName].connect();
+            selected_wallet_ergo.set(walletName);
+        }catch{
+            //gonna catch em all!
+        }
     }
 }
