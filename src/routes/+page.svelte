@@ -1,5 +1,4 @@
-<script>
-	// @ts-nocheck
+<script lang="ts">
 	import { NotificationDisplay, notifier } from '@beyonk/svelte-notifications';
 
 	function notify() {
@@ -8,7 +7,8 @@
 </script>
 
 <NotificationDisplay />
-<h1 class="text-3xl font-bold">Hello world!</h1>
+<div></div>
+<h1 class="text-3xl font-bold" >Hello world!</h1>
 
 <button on:click={notify}>Show notification</button>
 
