@@ -52,5 +52,8 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fleet-sdk/core": "^0.2.3"
+	}
 }

@@ -7,7 +7,7 @@
 	style="height:77px;"
 >
 	<a href="/">
-		<div class="text-white font-bold text-2xl">CrystalSwap</div>
+		<div class="text-white font-bold text-2xl">SampleApp</div>
 	</a>
 	<div>
 		<WalletButton />

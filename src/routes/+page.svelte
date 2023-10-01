@@ -1,12 +1,16 @@
 <script lang="ts">
 	import NotificationsExample from "$lib/NotificationsExample.svelte";
+	import TransactionExample from "$lib/TransactionExample.svelte";
 
 </script>
 
-<div class="grow p-4 main-page" style="padding-top:77px;">
-	<h1 class="text-5xl font-bold mb-10 mt-5">Welcome to CrystalSwap!</h1>
+<div class="flex flex-col grow p-4 main-page" style="padding-top:77px;">
+	<h1 class="text-5xl font-bold mb-10 mt-5">Welcome to SampleApp!</h1>
 
-	<NotificationsExample></NotificationsExample>
+	<div class="flex flex-wrap gap-4 w-full">
+		<NotificationsExample></NotificationsExample>
+		<TransactionExample></TransactionExample>
+	</div>
 </div>
 
 <style lang="postcss">
