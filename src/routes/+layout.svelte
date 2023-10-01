@@ -13,5 +13,4 @@
 </script>
 
 <Navbar />
-<div style="padding-top:77px;" />
 <slot />
