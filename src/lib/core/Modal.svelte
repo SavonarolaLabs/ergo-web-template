@@ -16,9 +16,11 @@
 	<div on:click|stopPropagation>
 		<slot />
 		<!-- svelte-ignore a11y-autofocus -->
-		<button 
-			class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
-			autofocus on:click={() => dialog.close()}>close modal</button>
+		<div class="flex justify-end">
+			<button 
+				class="w-full hover:bg-blue-700 hover:text-white py-2 px-4 border border-blue-700 rounded"
+				autofocus on:click={() => dialog.close()}>close</button>
+		</div>
 	</div>
 </dialog>
 
