@@ -32,20 +32,16 @@
 		<div class="w-52 h-52">
 			<div class="pl-1 uppercase font-bold text-slate-700">Ergo Wallets</div>
 			<div class="w-full mt-6 mb-4">
-				{#if !window.ergoConnector['nautilus']}
+				{#if !window.ergoConnector || !window.ergoConnector['nautilus']}
 					<a
 						href="https://chrome.google.com/webstore/detail/nautilus-wallet/gjlmehlldlphhljhpnlddaodbjjcchai"
 						target="blank_"
 						style="height:50px;"
-						class="grayscale mb-2 p-1 w-full flex justify-center items-center bg-white border-2 border-b-4 border-orange-400 text-black bg-green-100 rounded-md hover:border-orange-900 hover:grayscale-0"
+						class="p-2 w-full flex justify-center items-center bg-white border-orange-900 text-black bg-green-100 rounded-md bg-opacity-30 hover:bg-opacity-80"
 					>
-						<div><span class="text-xs">Install</span> <span class="text-xs">Nautilus</span></div>
-						<img
-							style="height:1em;width:1em;margin-left:0.25em"
-							src="/wallets/nautilus.svg"
-							alt=""
-						/></a
-					>
+						<div>Install Nautilus</div>
+						<img style="height:2em;width:2em;" src="/wallets/nautilus.svg" alt="" />
+			</a>
 				{:else}
 					<button
 						on:click={clickOnNautilusButton}
