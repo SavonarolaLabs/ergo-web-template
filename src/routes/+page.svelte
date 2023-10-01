@@ -1,7 +1,7 @@
 <script lang="ts">
 	import NotificationsExample from "$lib/NotificationsExample.svelte";
 	import TransactionExample from "$lib/TransactionExample.svelte";
-
+	import MintNftExample from "$lib/MintNftExample.svelte";
 </script>
 
 <div class="flex flex-col grow p-4 main-page" style="padding-top:77px;">
@@ -10,6 +10,7 @@
 	<div class="flex flex-wrap gap-4 w-full">
 		<NotificationsExample></NotificationsExample>
 		<TransactionExample></TransactionExample>
+		<MintNftExample></MintNftExample>
 	</div>
 </div>
 

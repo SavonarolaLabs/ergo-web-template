@@ -54,6 +54,7 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
-		"@fleet-sdk/core": "^0.2.3"
+		"@fleet-sdk/core": "^0.2.3",
+		"@scure/base": "^1.1.3"
 	}
 }
