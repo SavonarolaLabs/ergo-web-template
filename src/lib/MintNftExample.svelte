@@ -56,7 +56,7 @@
 </script>
 
 <div
-	class="flex flex-col gap-4 backdrop-blur bg-opacity-10 shadow-sm p-4 w-fit-content border rounded-md"
+	class="flex flex-col gap-4 backdrop-blur-md bg-opacity-10 shadow-sm p-4 w-fit-content border rounded-md"
 >
 	<h2 class="font-bold text-xl text-slate-100">MintNftExample.svelte</h2>
 	<div class="flex flex-col gap-2">

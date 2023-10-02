@@ -7,7 +7,7 @@
 	}
 </script>
 
-<div class="flex flex-col gap-4 backdrop-blur bg-opacity-10 shadow-sm p-4 border rounded-md w-fit-content">
+<div class="flex flex-col gap-4 backdrop-blur-md bg-opacity-10 shadow-sm p-4 border rounded-md w-fit-content">
     <h2 class="font-bold text-xl text-slate-100">NotificationsExample.svelte</h2>
     <div class="h-full flex items-end gap-2">
         <div class="w-full flex flex-col gap-4">
