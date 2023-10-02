@@ -4,6 +4,7 @@
 	import TransactionExample from "$lib/basic/TransactionExample.svelte";
 	import MintNftExample from "$lib/basic/MintNftExample.svelte";
 	import WalletBoxesExample from "$lib/basic/WalletBoxesExample.svelte";
+	import FetchOracleBoxExample from "$lib/basic/FetchOracleBoxExample.svelte";
 </script>
 
 <div class="flex flex-col grow p-4 main-page" style="padding-top:77px;">
@@ -14,6 +15,7 @@
 		<NotificationsExample></NotificationsExample>
 		<TransactionExample></TransactionExample>
 		<MintNftExample></MintNftExample>
+		<FetchOracleBoxExample></FetchOracleBoxExample>
 		<WalletBoxesExample></WalletBoxesExample>
 	</div>
 </div>
