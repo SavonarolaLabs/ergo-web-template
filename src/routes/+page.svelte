@@ -1,4 +1,5 @@
 <script lang="ts">
+	import WalletBalanceExample from "$lib/WalletBalanceExample.svelte";
 	import NotificationsExample from "$lib/NotificationsExample.svelte";
 	import TransactionExample from "$lib/TransactionExample.svelte";
 	import MintNftExample from "$lib/MintNftExample.svelte";
@@ -8,6 +9,7 @@
 	<h1 class="text-5xl font-bold mb-10 mt-5">Welcome to SampleApp!</h1>
 
 	<div class="flex flex-wrap gap-4 w-full">
+		<WalletBalanceExample></WalletBalanceExample>
 		<NotificationsExample></NotificationsExample>
 		<TransactionExample></TransactionExample>
 		<MintNftExample></MintNftExample>
