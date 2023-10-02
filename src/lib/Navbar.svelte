@@ -1,5 +1,5 @@
 <script>
-	import WalletButton from './WalletButton.svelte';
+	import WalletButton from '$lib/WalletButton.svelte';
 </script>
 
 <div

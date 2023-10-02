@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { notifier } from '@beyonk/svelte-notifications';
 	import { selected_wallet_ergo } from '../store/store.js';
-	import Modal from './core/Modal.svelte';
-	import { connectErgoWallet } from './core/wallet.js';
+	import Modal from './common/Modal.svelte';
+	import { connectErgoWallet } from './common/wallet.js';
 	let showModal = false;
 
 	async function clickOnNautilusButton() {

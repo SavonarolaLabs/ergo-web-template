@@ -1,8 +1,9 @@
 <script lang="ts">
-	import WalletBalanceExample from "$lib/WalletBalanceExample.svelte";
-	import NotificationsExample from "$lib/NotificationsExample.svelte";
-	import TransactionExample from "$lib/TransactionExample.svelte";
-	import MintNftExample from "$lib/MintNftExample.svelte";
+	import WalletBalanceExample from "$lib/basic/WalletBalanceExample.svelte";
+	import NotificationsExample from "$lib/basic/NotificationsExample.svelte";
+	import TransactionExample from "$lib/basic/TransactionExample.svelte";
+	import MintNftExample from "$lib/basic/MintNftExample.svelte";
+	import WalletBoxesExample from "$lib/basic/WalletBoxesExample.svelte";
 </script>
 
 <div class="flex flex-col grow p-4 main-page" style="padding-top:77px;">
@@ -13,6 +14,7 @@
 		<NotificationsExample></NotificationsExample>
 		<TransactionExample></TransactionExample>
 		<MintNftExample></MintNftExample>
+		<WalletBoxesExample></WalletBoxesExample>
 	</div>
 </div>
 
