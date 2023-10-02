@@ -70,7 +70,7 @@
 						[]
 					{/if}
 				</div>
-				<fieldset class="border border-solid border-gray-700 px-2">
+				<fieldset class="border border-solid border-white px-2 rounded-sm">
 					<legend>Registers</legend>
 					<!-- Your content here -->
 
