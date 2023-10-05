@@ -1,58 +1,63 @@
-# create-svelte
+# Ergo Web Template
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+An efficient Svelte-based web template integrated with advanced features like a notification system, a modal component, and Ergo Wallet functionalities.
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+## 🛠️ Pre-requisites
 
-## Creating a project
+Before you begin with the setup, ensure you have the following tools installed:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Git**: This is required to clone the repository. If not installed, you can download it from [git-scm.com](https://git-scm.com/).
+- **npm**: Node Package Manager (npm) is essential for managing project dependencies. It comes bundled with Node.js. If you don't have it, download and install Node.js (which includes npm) from [nodejs.org](https://nodejs.org/).
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## 🚀 Getting Started
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Follow these steps to set up the project locally:
 
-## Developing
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/SavonarolaLabs/ergo-web-template
+   cd ergo-web-template
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
+3. **Run the Development Server**
+   ```bash
+   npm run dev
+   ```
+   This starts the server and automatically launches the application in your default browser.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## 📁 Key Files & Directories
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+Dive into the primary components housed in the [src/lib](src/lib) directory:
 
-## Building
+- **Notifications**: [src/lib/basic/NotificationsExample.svelte](src/lib/basic/NotificationsExample.svelte) demonstrates the implementation of the @beyonk/svelte-notifications package.
+- **Modal Component**: [src/lib/common/Modal.svelte](src/lib/common/Modal.svelte) offers a reusable modal structure built with HTMLDialogElement.
+- **Wallet Interactions**:
+  - [src/lib/basic/WalletBoxesExample.svelte](src/lib/basic/WalletBoxesExample.svelte) – Display wallet's boxes.
+  - [src/lib/basic/FetchOracleBoxExample.svelte](src/lib/basic/FetchOracleBoxExample.svelte) – Fetch details of the Oracle box.
+  - [src/lib/basic/TransactionExample.svelte](src/lib/basic/TransactionExample.svelte) – Send Erg to a designated address.
+  - [src/lib/basic/MintNftExample.svelte](src/lib/basic/MintNftExample.svelte) – Mint NFTs according to the EIP-004 protocol.
 
-To build your library:
+## FleetSDK Integration
 
-```bash
-npm run package
-```
+This project comes with Fleet SDK, you can see more usage examples in their [documentation](https://fleet-sdk.github.io/docs/)
 
-To create a production version of your showcase app:
+## 🔨 Build the Project
 
+For a production-ready build:
 ```bash
 npm run build
 ```
+The built files will be located in the `build` directory.
 
-You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## 📘 Additional Information
 
-## Publishing
+- **Build Pipeline**: This project utilizes Trunk. Configuration details are available in `.trunk/trunk.yaml`.
+- **Dependencies**: `package-lock.json` ensures consistent dependency installation across setups.
 
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+For an in-depth understanding of Svelte applications, consult the [official Svelte documentation](https://svelte.dev/docs).

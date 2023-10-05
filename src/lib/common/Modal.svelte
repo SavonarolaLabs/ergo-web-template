@@ -1,11 +1,15 @@
 <script lang="ts">
-	export let showModal:boolean; // boolean
+    // Exported prop that dictates if the modal should be displayed
+    export let showModal: boolean;
 
-	let dialog: HTMLDialogElement;
+    // Reference to the HTMLDialogElement (the <dialog> tag in this case)
+    let dialog: HTMLDialogElement;
 
-	$: if (dialog && showModal) dialog.showModal();
+    // Reactive statement: When `dialog` exists and `showModal` is true, show the modal
+    $: if (dialog && showModal) dialog.showModal();
 </script>
 
+<!-- Dialog element with accessibility ignores for specific rules -->
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 <dialog
 	bind:this={dialog}
