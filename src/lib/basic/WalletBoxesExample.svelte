@@ -64,7 +64,7 @@
                                             </td>
                                             <td class="border px-4 py-2">
                                                 <a href="https://explorer.ergoplatform.com/en/token/{asset.tokenId}">
-                                                    {asset.tokenId.substr(0,3)}...{asset.tokenId.substr(-3)}
+                                                    {asset.tokenId}
                                                 </a>
                                             </td>
                                         </tr>
