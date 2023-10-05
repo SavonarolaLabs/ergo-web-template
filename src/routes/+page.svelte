@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex flex-col grow p-4 main-page" style="padding-top:77px;">
-	<h1 class="text-5xl font-bold mb-10 mt-5">Welcome to SampleApp!</h1>
+	<h1 class="text-5xl font-bold mb-10 mt-5">Welcome to ErgoWebTemplate!</h1>
 
 	<div class="flex flex-wrap gap-4 w-full">
 		<WalletBalanceExample></WalletBalanceExample>

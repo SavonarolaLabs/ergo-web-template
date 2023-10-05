@@ -11,7 +11,7 @@
     <!-- Link that navigates to the home page of the application when clicked -->
 	<a href="/">
 		<!-- Branding or title for the application -->
-		<div class="text-white font-bold text-2xl">SampleApp</div>
+		<div class="text-white font-bold text-2xl">ErgoWebTemplate</div>
 	</a>
 
     <!-- Container for the WalletButton component -->
