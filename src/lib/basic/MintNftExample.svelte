@@ -11,9 +11,10 @@
 		SByte
 	} from '@fleet-sdk/core';
 
-	let nftName = 'Bitmask #2';
-	const nftDescription = 'Welcome to Ergo!';
-	const ipfsImageLink = 'ipfs://bafkreibmcf5cthtdobzi6oveqwtobiocffmjv6q7m7xn5isfn6xcpgyfsa';
+	let nftName = 'Testmon #1';
+	const nftDescription = 'Gen1 Testmon';
+	const ipfsImageLink =
+		'https://raw.githubusercontent.com/SavonarolaLabs/testmon/refs/heads/main/img/1_1.jpg';
 	const sha256 = '2c117a299e6370728f3aa485a6e0a1c229589afa1f67eedea2456fae279b0590';
 
 	async function mintEip004Nft() {
@@ -60,7 +61,7 @@
 >
 	<h2 class="font-bold text-xl text-slate-100">MintNftExample.svelte</h2>
 	<div class="flex flex-col gap-2">
-		<img src="zk_genesis_2.png" alt="" style="width:220px" />
+		<img src={ipfsImageLink} alt="" style="width:220px" />
 		<input class="p-2 text-slate-600" type="text" bind:value={nftName} />
 	</div>
 	<div class="flex gap-2">
